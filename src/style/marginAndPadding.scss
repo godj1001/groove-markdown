@@ -1,0 +1,26 @@
+$i: 8;
+@while $i >0{
+  .mt-#{$i}p {margin-top: 4px * $i;}
+  .ml-#{$i}p {margin-left: 4px * $i;}
+  .mr-#{$i}p {margin-right: 4px * $i;}
+  .mb-#{$i}p {margin-bottom: 4px * $i;}
+  .m-#{$i}p {margin: 4px * $i;}
+  .mx-#{$i}p {margin-left: 4px * $i;margin-right: 4px*$i}
+  .my-#{$i}p {margin-bottom:  4px * $i;margin-top: 4px*$i}
+
+  .p-#{$i}p {padding: 4px * $i;}
+  .px-#{$i}p {padding-left:  4px * $i;padding-right: 4px * $i}
+  .py-#{$i}p {padding-top: 4px * $i ;padding-bottom: 4px*$i}
+  .pt-#{$i}p {padding-top: 4px * $i;}
+  .pl-#{$i}p {padding-left: 4px * $i;}
+  .pr-#{$i}p {padding-right: 4px * $i;}
+  .pb-#{$i}p {padding-bottom: 4px * $i;}
+  $i: $i - 1;
+}
+
+$position: (left,right,center);
+@each $p in $position {
+  .text-#{$p} {
+    text-align: $p;
+  }
+}

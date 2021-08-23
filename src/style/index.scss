@@ -1,0 +1,15 @@
+@import "base";
+@import "marginAndPadding";
+
+table,th,td,tr{
+  border: 1px solid $deepBlue;
+  border-collapse: collapse;
+}
+th {
+  background: #eeeeee;
+}
+blockquote{
+  margin-left: 0;
+  padding-left: 20px;
+  border-left: 10px solid #d9d9d9;
+}
